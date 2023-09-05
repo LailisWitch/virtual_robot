@@ -10,8 +10,11 @@ public class LailTwst extends LinearOpMode {
         telemetry.addData("name", "Lail");
         telemetry.update();
         waitForStart();
+        int counter = 0;
         while (opModeIsActive()) {
-
+            counter++;
+            telemetry.addData("counter" , counter);
+            telemetry.update();
         }
     }
 }
